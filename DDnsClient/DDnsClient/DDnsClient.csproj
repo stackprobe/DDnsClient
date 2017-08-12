@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A5208B3-AB3B-44F0-A4BA-856AB0E3AEA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Charlotte</RootNamespace>
+    <AssemblyName>DDnsClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>dc.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background.cs" />
+    <Compile Include="BootTools.cs" />
+    <Compile Include="BusyDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusyDlg.Designer.cs">
+      <DependentUpon>BusyDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientData.cs" />
+    <Compile Include="ClientMain.cs" />
+    <Compile Include="EditWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditWin.Designer.cs">
+      <DependentUpon>EditWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalProcMtx.cs" />
+    <Compile Include="Ground.cs" />
+    <Compile Include="HFEditWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HFEditWin.Designer.cs">
+      <DependentUpon>HFEditWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger.cs" />
+    <Compile Include="MainWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWin.Designer.cs">
+      <DependentUpon>MainWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterWin.Designer.cs">
+      <DependentUpon>RegisterWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultWin.Designer.cs">
+      <DependentUpon>ResultWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingWin.Designer.cs">
+      <DependentUpon>SettingWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ArrayTools.cs" />
+    <Compile Include="Tools\AutoTable.cs" />
+    <Compile Include="Tools\BracketParser.cs" />
+    <Compile Include="Tools\ByteBuffer.cs" />
+    <Compile Include="Tools\ColorTools.cs" />
+    <Compile Include="Tools\CrossDictionary.cs" />
+    <Compile Include="Tools\CsvData.cs" />
+    <Compile Include="Tools\DateTimeTools.cs" />
+    <Compile Include="Tools\DebugTools.cs" />
+    <Compile Include="Tools\DictionaryTools.cs" />
+    <Compile Include="Tools\DirectoryTools.cs" />
+    <Compile Include="Tools\FileSorter.cs" />
+    <Compile Include="Tools\FileTools.cs" />
+    <Compile Include="Tools\HttpClient.cs" />
+    <Compile Include="Tools\HttpRequest.cs" />
+    <Compile Include="Tools\HttpResponse.cs" />
+    <Compile Include="Tools\IntTools.cs" />
+    <Compile Include="Tools\JString.cs" />
+    <Compile Include="Tools\LongTools.cs" />
+    <Compile Include="Tools\MathTools.cs" />
+    <Compile Include="Tools\MutexData.cs" />
+    <Compile Include="Tools\NamedEventData.cs" />
+    <Compile Include="Tools\SecurityTools.cs" />
+    <Compile Include="Tools\StringIndexOf.cs" />
+    <Compile Include="Tools\StringTools.cs" />
+    <Compile Include="Tools\TextFileSorter.cs" />
+    <Compile Include="Tools\TimeData.cs" />
+    <Compile Include="Tools\XNode.cs" />
+    <Compile Include="簡単登録_ieServerNet_Win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="簡単登録_ieServerNet_Win.Designer.cs">
+      <DependentUpon>簡単登録_ieServerNet_Win.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BusyDlg.resx">
+      <DependentUpon>BusyDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWin.resx">
+      <DependentUpon>EditWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HFEditWin.resx">
+      <DependentUpon>HFEditWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWin.resx">
+      <DependentUpon>MainWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterWin.resx">
+      <DependentUpon>RegisterWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultWin.resx">
+      <DependentUpon>ResultWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingWin.resx">
+      <DependentUpon>SettingWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="簡単登録_ieServerNet_Win.resx">
+      <DependentUpon>簡単登録_ieServerNet_Win.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dc.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
