@@ -7,12 +7,6 @@ DDnsClient
 ビルド済み配布物
 ----------------
 
-以下の場所からダウンロードできます。
-
-Vector
-http://www.vector.co.jp/soft/winnt/net/se511417.html
-
-うちのサイト
 http://stackprobe.dip.jp/DDnsClient
 
 
