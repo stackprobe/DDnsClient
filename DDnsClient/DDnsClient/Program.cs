@@ -42,10 +42,15 @@ namespace Charlotte
 
 				// < orig
 
+				// ここではフォームは開けない
+#if true
+				Background.End();
+#else
 				using (Form f = new BusyDlg(Background.End))
 				{
 					f.ShowDialog();
 				}
+#endif
 				Gnd.SaveToFile();
 
 				GlobalProcMtx.Release();
