@@ -53,13 +53,28 @@ namespace Charlotte
 
 		private void MainWin_FormClosed(object sender, FormClosedEventArgs e)
 		{
+			// noop
+		}
+
+		private void CloseWindow()
+		{
 			this.MT_Enabled = false;
 			this.TaskTrayIcon.Visible = false;
+
+			// プロセス終了時にすること
+			{
+				using (Form f = new BusyDlg(Background.End))
+				{
+					f.ShowDialog();
+				}
+			}
+
+			this.Close();
 		}
 
 		private void 終了XToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			this.Close();
+			this.CloseWindow();
 		}
 
 		private bool MT_Enabled;
@@ -77,7 +92,7 @@ namespace Charlotte
 			{
 				if (Gnd.Flagプログラム終了要求)
 				{
-					this.Close();
+					this.CloseWindow();
 					return;
 				}
 				if (50 <= this.MT_Count && this.MT_Count % 20 == 10) // 起動してから 5 sec 経過 && 2 sec 毎
