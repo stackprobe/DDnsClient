@@ -122,6 +122,7 @@
     <Compile Include="Tools\StringIndexOf.cs" />
     <Compile Include="Tools\StringTools.cs" />
     <Compile Include="Tools\TimeData.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="簡単登録_ieServerNet_Win.cs">
       <SubType>Form</SubType>
     </Compile>

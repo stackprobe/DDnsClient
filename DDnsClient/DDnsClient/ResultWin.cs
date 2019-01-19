@@ -42,6 +42,8 @@ namespace Charlotte
 				this.ResultLabel.ForeColor = Color.White;
 			}
 			this.ResBodyEncoding.SelectedIndex = (int)EditWin.W_ResBodyEncoding;
+
+			Utils.PostShown(this);
 		}
 
 		private void ResultWin_FormClosing(object sender, FormClosingEventArgs e)

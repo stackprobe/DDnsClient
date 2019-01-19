@@ -52,6 +52,8 @@ namespace Charlotte
 			this.HFSheet.ClearSelection();
 
 			this.Url.Focus();
+
+			Utils.PostShown(this);
 		}
 
 		private void UIRefresh()

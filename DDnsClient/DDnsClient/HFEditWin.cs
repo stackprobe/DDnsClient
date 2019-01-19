@@ -45,7 +45,7 @@ namespace Charlotte
 
 		private void HFEditWin_Shown(object sender, EventArgs e)
 		{
-			// noop
+			Utils.PostShown(this);
 		}
 
 		private void HFEditWin_FormClosing(object sender, FormClosingEventArgs e)

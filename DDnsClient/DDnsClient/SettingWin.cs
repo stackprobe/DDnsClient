@@ -54,6 +54,8 @@ namespace Charlotte
 		private void SettingWin_Shown(object sender, EventArgs e)
 		{
 			this.UIRefresh();
+
+			Utils.PostShown(this);
 		}
 
 		private void SettingWin_FormClosing(object sender, FormClosingEventArgs e)

@@ -28,6 +28,8 @@ namespace Charlotte
 		private void 簡単登録_ieServerNet_Win_Shown(object sender, EventArgs e)
 		{
 			this.UIRefresh();
+
+			Utils.PostShown(this);
 		}
 
 		private void UIRefresh()
