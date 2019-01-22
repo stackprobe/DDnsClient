@@ -8,6 +8,8 @@ namespace Charlotte
 {
 	public class Utils
 	{
+		// sync > @ PostShown
+
 		public static void PostShown(Form f)
 		{
 			List<Control.ControlCollection> controlTable = new List<Control.ControlCollection>();
@@ -45,5 +47,7 @@ namespace Charlotte
 				}
 			}
 		}
+
+		// < sync
 	}
 }
