@@ -26,6 +26,22 @@ namespace Charlotte
 					{
 						controlTable.Add(gb.Controls);
 					}
+					TabControl tc = control as TabControl;
+
+					if (tc != null)
+					{
+						foreach (TabPage tp in tc.TabPages)
+						{
+							controlTable.Add(tp.Controls);
+						}
+					}
+					SplitContainer sc = control as SplitContainer;
+
+					if (sc != null)
+					{
+						controlTable.Add(sc.Panel1.Controls);
+						controlTable.Add(sc.Panel2.Controls);
+					}
 					TextBox tb = control as TextBox;
 
 					if (tb != null)
