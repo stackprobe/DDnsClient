@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Charlotte
 {
-	public class Utils
+	public static class Utils
 	{
 		// sync > @ PostShown
 

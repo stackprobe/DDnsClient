@@ -6,7 +6,7 @@ using Charlotte.Tools;
 
 namespace Charlotte
 {
-	public class Background
+	public static class Background
 	{
 		public static void Interval()
 		{

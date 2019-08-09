@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Charlotte
 {
-	public class Logger
+	public static class Logger
 	{
 		private static object SYNCROOT = new object();
 		private const int LOG_FILE_SIZE_MAX = 100000; // 100 KB

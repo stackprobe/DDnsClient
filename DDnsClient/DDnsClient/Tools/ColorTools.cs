@@ -6,7 +6,7 @@ using System.Drawing;
 
 namespace Charlotte.Tools
 {
-	public class ColorTools
+	public static class ColorTools
 	{
 		public static Color FromRRGGBB(string str)
 		{

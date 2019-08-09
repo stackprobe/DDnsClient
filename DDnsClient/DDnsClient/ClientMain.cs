@@ -7,7 +7,7 @@ using Charlotte.Tools;
 
 namespace Charlotte
 {
-	public class ClientMain
+	public static class ClientMain
 	{
 		private static Thread _th;
 		private static int _currClientIndex = 0;
