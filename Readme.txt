@@ -7,7 +7,7 @@ DDnsClient
 ビルド済み配布物
 ----------------
 
-http://stackprobe.dip.jp/DDnsClient
+http://stackprobe.ccsp.mydns.jp/DDnsClient
 
 
 マニュアル
